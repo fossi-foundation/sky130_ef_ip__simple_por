@@ -9,9 +9,9 @@ PDK:            sky130A
 cace_format:    5.2
 
 authorship:
-  designer:         Leo Moser
+  designer:         Tim Edwards
   company:          Efabless
-  creation_date:    November 20, 2024
+  creation_date:    February 19, 2025
   license:          Apache 2.0
 
 paths:
