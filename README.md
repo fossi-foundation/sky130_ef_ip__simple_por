@@ -5,10 +5,10 @@ Calibrated to 500us nominal delay, no temperature compensation.
 
 - [Documentation](docs/sky130_ef_ip__simple_por.md)
 - Characterization
-  - [schematic](docs/sky130_ef_ip__simple_por.md)
-  - [layout](docs/sky130_ef_ip__simple_por.md)
-  - [pex](docs/sky130_ef_ip__simple_por.md)
-  - [rcx](docs/sky130_ef_ip__simple_por.md)
+  - [schematic](docs/sky130_ef_ip__simple_por_schematic.md)
+  - [layout](docs/sky130_ef_ip__simple_por_layout.md)
+  - [pex](docs/sky130_ef_ip__simple_por_pex.md)
+  - [rcx](docs/sky130_ef_ip__simple_por_rcx.md)
 
 ## License and Information
 
