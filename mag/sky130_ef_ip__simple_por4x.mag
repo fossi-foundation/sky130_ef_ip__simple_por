@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1740599974
+timestamp 1746730835
 << isosubstrate >>
 rect 1330 7236 8715 11911
 rect 234 0 8715 7236
@@ -15,6 +15,7 @@ rect 2105 477 2115 533
 rect 44 11784 116 11808
 rect 44 52 116 76
 << mvpsubdiff >>
+rect 8319 10986 8648 11020
 rect 1229 7452 1297 10870
 rect 1956 7004 2358 7028
 rect 1956 3178 2358 3202
@@ -753,4 +754,5 @@ port 4 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 8715 11912
 string LEFclass BLOCK
+string MASKHINTS_HVI 350 7390 2370 11900
 << end >>
