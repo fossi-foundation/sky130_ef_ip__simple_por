@@ -31,31 +31,22 @@ MACRO sky130_ef_ip__simple_por4x
         RECT 5.145 0.000 7.145 34.990 ;
     END
   END vss3v3
-  PIN porb_h[0]
+  PIN porb_h
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5.040000 ;
+    ANTENNADIFFAREA 10.080000 ;
     PORT
       LAYER met2 ;
-        RECT 24.080 57.870 24.585 59.555 ;
+        RECT 24.080 57.750 24.585 59.555 ;
     END
-  END porb_h[0]
-  PIN porb_h[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    ANTENNADIFFAREA 5.040000 ;
-    PORT
-      LAYER met2 ;
-        RECT 30.830 57.870 31.335 59.555 ;
-    END
-  END porb_h[1]
+  END porb_h
   PIN por_l
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 2.520000 ;
     PORT
       LAYER met2 ;
-        RECT 5.665 58.615 5.965 59.560 ;
+        RECT 5.665 54.030 5.965 59.560 ;
     END
   END por_l
   PIN porb_l
@@ -64,7 +55,7 @@ MACRO sky130_ef_ip__simple_por4x
     ANTENNADIFFAREA 2.520000 ;
     PORT
       LAYER met2 ;
-        RECT 3.840 58.610 4.140 59.555 ;
+        RECT 3.840 51.925 4.140 59.555 ;
     END
   END porb_l
   PIN vss1v8
@@ -77,20 +68,19 @@ MACRO sky130_ef_ip__simple_por4x
   END vss1v8
   OBS
       LAYER nwell ;
-        RECT 1.730 0.070 43.520 59.500 ;
+        RECT 1.730 0.070 43.545 59.500 ;
       LAYER li1 ;
         RECT 0.040 0.000 43.240 59.360 ;
       LAYER met1 ;
         RECT 0.000 0.000 43.365 59.200 ;
       LAYER met2 ;
-        RECT 0.000 58.330 3.560 59.200 ;
-        RECT 4.420 58.335 5.385 59.200 ;
-        RECT 6.245 58.335 23.800 59.200 ;
-        RECT 4.420 58.330 23.800 58.335 ;
-        RECT 0.000 57.590 23.800 58.330 ;
-        RECT 24.865 57.590 30.550 59.200 ;
-        RECT 31.615 57.590 43.350 59.200 ;
-        RECT 0.000 0.000 43.350 57.590 ;
+        RECT 0.000 51.645 3.560 59.200 ;
+        RECT 4.420 53.750 5.385 59.200 ;
+        RECT 6.245 57.470 23.800 59.200 ;
+        RECT 24.865 57.470 43.350 59.200 ;
+        RECT 6.245 53.750 43.350 57.470 ;
+        RECT 4.420 51.645 43.350 53.750 ;
+        RECT 0.000 0.000 43.350 51.645 ;
       LAYER met3 ;
         RECT 0.000 0.000 43.165 59.555 ;
       LAYER met4 ;

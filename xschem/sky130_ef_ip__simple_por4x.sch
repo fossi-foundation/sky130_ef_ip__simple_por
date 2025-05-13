@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -8,9 +7,6 @@ E {}
 L 4 3370 -60 3390 -60 {}
 L 4 3390 -60 3390 80 {}
 L 4 3370 80 3390 80 {}
-L 4 3410 -250 3430 -250 {}
-L 4 3430 -250 3430 -110 {}
-L 4 3410 -110 3430 -110 {}
 T {Current step-down mirror} 2270 140 0 0 0.4 0.4 {}
 T {Charge accumulator} 2650 140 0 0 0.4 0.4 {}
 T {Voltage divider} 1860 140 0 0 0.4 0.4 {}
@@ -20,14 +16,11 @@ T {step down 8x} 2130 -430 0 0 0.4 0.4 {}
 T {step down 7x} 2330 80 0 0 0.4 0.4 {}
 T {step down 7x} 2520 -430 0 0 0.4 0.4 {}
 T {1.8V domain outputs} 3400 0 0 0 0.4 0.4 {}
-T {3.3V domain outputs} 3440 -200 0 0 0.4 0.4 {}
+T {3.3V domain output} 3440 -180 0 0 0.4 0.4 {}
 T {392 : 1} 2270 180 0 0 0.4 0.4 {}
 T {Simple power-on-reset circuit
 calibrated to 500us nominal delay
 no temperature compensation} 1950 -570 0 0 0.6 0.6 {}
-T {Two porb_h outputs are provided to split the
-load between the left and right sides of the
-padframe.} 3060 -420 0 0 0.4 0.4 {}
 N 2500 -310 2500 -270 { lab=#net1}
 N 2500 -210 2500 -100 { lab=#net2}
 N 2300 -40 2300 20 { lab=#net3}
@@ -118,24 +111,13 @@ N 2630 50 2690 50 { lab=vss3v3}
 N 2300 -100 2300 -40 { lab=#net3}
 N 2500 -100 2500 -30 { lab=#net2}
 N 2500 -30 2500 20 { lab=#net2}
-N 3410 -280 3460 -280 {
-lab=porb_h[1:0]}
-N 3280 -200 3300 -200 {
-lab=porb_h[1]}
-N 3280 -130 3300 -130 {
-lab=porb_h[0]}
+N 3280 -170 3300 -170 {
+lab=porb_h}
 N 3090 -170 3090 60 {
 lab=#net10}
 N 3060 -130 3090 -130 {
 lab=#net10}
-N 3180 -200 3200 -200 {
-lab=#net11}
-N 3180 -200 3180 -130 {
-lab=#net11}
-N 3180 -130 3200 -130 {
-lab=#net11}
-N 3170 -170 3180 -170 {
-lab=#net11}
+N 3170 -170 3200 -170 {lab=#net11}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2690 -40 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 2820 -40 2 1 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2280 -240 0 0 {name=M1
@@ -307,7 +289,6 @@ L=25
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=2}
-C {sky130_stdcells/buf_16.sym} 3240 -130 0 0 {name=x2 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/buf_8.sym} 3170 -40 0 0 {name=x3 VGND=vss1v8 VNB=vss1v8 VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/inv_8.sym} 3170 60 0 0 {name=x4 VGND=vss1v8 VNB=vss1v8 VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/buf_1.sym} 3020 -130 0 0 {name=x5 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__schmitt }
@@ -317,9 +298,9 @@ C {devices/opin.sym} 3300 -40 0 0 {name=p4 lab=porb_l}
 C {devices/opin.sym} 3300 60 0 0 {name=p5 lab=por_l}
 C {devices/iopin.sym} 2840 -330 0 0 {name=p6 lab=vdd1v8}
 C {devices/iopin.sym} 2870 60 0 0 {name=p7 lab=vss1v8}
-C {sky130_stdcells/buf_16.sym} 3240 -200 0 0 {name=x1 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__ }
-C {devices/opin.sym} 3460 -280 0 0 {name=p8 lab=porb_h[1:0]}
-C {lab_pin.sym} 3300 -130 0 1 {name=p3 sig_type=std_logic lab=porb_h[0]}
-C {lab_pin.sym} 3300 -200 0 1 {name=p9 sig_type=std_logic lab=porb_h[1]}
-C {lab_pin.sym} 3410 -280 0 0 {name=p10 sig_type=std_logic lab=porb_h[1:0]}
+C {devices/opin.sym} 3300 -170 0 0 {name=p8 lab=porb_h}
 C {sky130_stdcells/buf_8.sym} 3130 -170 0 0 {name=x6 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__ q}
+C {buf_32.sym} 3240 -170 0 0 {name=x1 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} 3180 140 0 0 {name=x7 VGND=vss1v8 VNB=vss1v8 VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} 3180 -250 0 0 {name=x2 VGND=vss3v3 VNB=vss3v3 VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} 3180 180 0 0 {name=x8 VGND=vss1v8 VNB=vss1v8 VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
