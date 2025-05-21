@@ -742,5 +742,5 @@ port 3 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 8715 11912
 string LEFclass BLOCK
-string MASKHINTS_HVI 50 7390 2370 11900 2370 10915 8755 11900
+string MASKHINTS_HVI 300 7390 2370 11900 2370 10915 8755 11900
 << end >>

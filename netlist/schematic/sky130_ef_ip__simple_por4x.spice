@@ -22,7 +22,8 @@ x4 net10 vss1v8 vss1v8 vdd1v8 vdd1v8 por_l sky130_fd_sc_hvl__inv_8
 x5 net9 vss3v3 vss3v3 vdd3v3 vdd3v3 net10 sky130_fd_sc_hvl__schmittbuf_1
 x6 net10 vss3v3 vss3v3 vdd3v3 vdd3v3 net11 sky130_fd_sc_hvl__buf_8
 x1 net11 vss3v3 vss3v3 vdd3v3 vdd3v3 porb_h sky130_fd_sc_hvl__buf_32
-x7 vss1v8 vss1v8 vdd1v8 vdd1v8 sky130_fd_sc_hvl__decap_4
-x2 vss3v3 vss3v3 vdd3v3 vdd3v3 sky130_fd_sc_hvl__decap_4
-x8 vss1v8 vss1v8 vdd1v8 vdd1v8 sky130_fd_sc_hvl__decap_4
+x7[1] vss1v8 vss1v8 vdd1v8 vdd1v8 sky130_fd_sc_hvl__decap_4
+x7[0] vss1v8 vss1v8 vdd1v8 vdd1v8 sky130_fd_sc_hvl__decap_4
+x2[1] vss3v3 vss3v3 vdd3v3 vdd3v3 sky130_fd_sc_hvl__decap_4
+x2[0] vss3v3 vss3v3 vdd3v3 vdd3v3 sky130_fd_sc_hvl__decap_4
 .ends
